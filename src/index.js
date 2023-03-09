@@ -6,7 +6,7 @@ const port = process.argv[2] || process.env.PORT || 3000;
 
 
 app.get('/', (req, res) => {
-    res.send({ 'date': new Date(), 'text': faker.lorem.paragraph()});
+    res.send({ 'date': new Date(), 'text': faker.lorem.paragraph(), 'newStuff' : "hey, im newly added stuff"});
 });
 
 app.listen(port, () => console.log(`App started on ${port}!`));
